@@ -1,0 +1,10 @@
+---
+# tasks file for roles/common
+---
+- name: Apply common configuration
+  hosts: all
+  roles:
+    - common
+
+- import_playbook: playbooks/webserver_setup.yml
+
